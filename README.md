@@ -26,10 +26,9 @@ Execute Django admin and create details for 10 books
 
 ## admin.py
 
-from django.apps import AppConfig
+    from django.apps import AppConfig
 
-
-class AppConfig(AppConfig):
+    class AppConfig(AppConfig):
 
     default_auto_field = 'django.db.models.BigAutoField'
     
@@ -37,10 +36,9 @@ class AppConfig(AppConfig):
 
 ## models.py
 
-from django.db import models
+    from django.db import models
 
-
-class Employee(models.Model):
+    class Employee(models.Model):
 
     empid=models.IntegerField()
     
