@@ -24,25 +24,32 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
-admin.py
+## admin.py
 
 from django.apps import AppConfig
 
 
 class AppConfig(AppConfig):
+
     default_auto_field = 'django.db.models.BigAutoField'
+    
     name = 'App'
 
-models.py
+## models.py
 
 from django.db import models
 
 
 class Employee(models.Model):
+
     empid=models.IntegerField()
+    
     empname=models.CharField(max_length=20)
+    
     dept=models.CharField(max_length=20)
+    
     salary=models.FloatField()
+    
     aadhaar=models.BigIntegerField(null=True)
 
 
